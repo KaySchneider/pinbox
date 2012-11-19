@@ -1,0 +1,18 @@
+<h1>jquer plugin pinbox</h1>
+
+author: Kay Schneider
+
+
+usage:
+
+inlcude one of the files in the js folder and the pinbox.css file into your
+file.
+
+Example:
+
+<link href="source/css/pinbox.css" rel="stylesheet">
+<script src="/source/js/jquery.js"></script>
+<script src="/source/js/jquery.pinbox.min.js"></script>
+
+
+

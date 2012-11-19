@@ -29,17 +29,17 @@
             $.fn.pinbox.staticInfo.isRun = true;
             container = $(options.subcontainer + "." + options.newitemindicator, $(this));
 
-            var matrix  =  methods['buildMatrix'].apply( this, [container]);
+            var matrix  =  methods['buildMatrix'].apply( this, [container, options]);
             methods.setPositions.apply(this, [ matrix , options ]);
        
             return container;
         },
         
-        buildMatrix: function (containerArrs) {
+        buildMatrix: function (containerArrs, options) {
 
             var matrix = new Array();
             var subMatrix = new Array();
-            var matrixWidth = 5;
+            var matrixWidth = options.rowsize;
             var counter = 0;
             $(containerArrs).each(function () {
                 counter++;
@@ -240,8 +240,8 @@
 
     $.fn.pinbox.defaults =  {
         newitemindicator : "new",
-        subcontainer : ".prodcont" 
-  
+        subcontainer : ".prodcont",
+        rowsize : 5
     };
 })( jQuery );
 

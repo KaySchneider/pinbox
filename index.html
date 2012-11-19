@@ -59,18 +59,21 @@
                         <p>
                             Create a new pinboxes:
                         </p>
+                        <pre>
                         <code>
 
                             $(document).ready(function () {
                             $('#categoryProductContainer').pinbox().hide(0).fadeIn(1000);
                             });
-                            </pre>
+                           
                         </code>
+                        </pre>
                         <p>
                             The html markup for the simple example:
                         </p>
+                        <pre>
                         <code>
-                            <pre>
+                           
   < d i v style="position:relative" id="categoryProductContainer">
             < d i v class="span2 prodcont new" >
                 1
@@ -78,25 +81,27 @@
  < / d  i  v >
             ......
 
-                            </pre>
+                            
                         </code>
+                        </pre>
                         <p>
                             Important in this html markup are the class "new" and the class"prodcont" this
                             classes are the selector for the pinbox plugin
                         </p>
                         <h4>
                             Avaiable Options: 
-                        </h4>
+                        </h4>  
+                        <pre>
                         <code>
-                            <pre>
+                          
 var options = {
         newitemindicator : "new",
         subcontainer : ".prodcont" 
 };
 $('#categoryProductContainer').pinbox(options);
-                            </pre>
+                            
                         </code>
-
+                        </pre>
                         <p>
                             <b>option newitemindicator</b><br/>
                             the new item indicator is a class wich all the subcontainers must have.

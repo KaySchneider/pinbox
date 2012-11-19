@@ -1,7 +1,8 @@
-<h1>jquer plugin pinbox</h1>
+jquer plugin pinbox
 
 author: Kay Schneider
 
+version: 1.0 // 2012.11.19
 
 usage:
 
@@ -13,6 +14,69 @@ Example:
 <link href="source/css/pinbox.css" rel="stylesheet">
 <script src="/source/js/jquery.js"></script>
 <script src="/source/js/jquery.pinbox.min.js"></script>
+
+<script>
+  // the simplest way
+  $('#wrapperContainer').pinbox();
+</script>
+
+
+A html markup for the above example:
+
+<div style="position:relative" id="categoryProductContainer">
+            <div class="span2 pcon  prodcont actioninside new" >
+
+                1
+
+            </div>
+
+
+            <div class="span2 pcon prodcont actioninside new" >
+
+                2
+
+            </div>
+
+            <div class="span2 pcon higher prodcont actioninside new" >
+
+                3
+
+            </div>
+
+            <div class="span2 pcon prodcont actioninside new" >
+
+                4
+
+            </div>
+
+
+            <div class="span2 pcon prodcont actioninside new" >
+
+                5
+
+            </div>
+
+
+            <div class="span2 pcon prodcont actioninside new" >
+
+                6
+
+            </div>
+
+
+            <div class="span2 pcon prodcont actioninside new" >
+
+                7
+
+            </div>
+
+
+            <div class="span2 pcon higher prodcont actioninside new" >
+
+                8
+
+            </div>
+</div>
 
 
 
